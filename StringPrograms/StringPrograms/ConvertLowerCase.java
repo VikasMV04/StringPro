@@ -13,6 +13,7 @@ public class ConvertLowerCase {
         	 ++i;
          }
          System.out.println(s);
+         System.out.println("");
          System.out.println(s1);//convert to lower case
 	}
 
