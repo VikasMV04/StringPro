@@ -22,6 +22,16 @@ public class ReverseString {
 	        String text = "educative";
 	        System.out.println("Original string - " + text);
 	        System.out.println("Reversed string - " + reverse(text));
+
+		    String str = "educative";
+	        String str2="";
+	        System.out.println(str.length());
+	        for (int i = str.length()-1; i >= 0; i--) 
+	        {
+	        	System.out.println(i);
+				str2+=str.charAt(i);
+			}
+	        System.out.println(str2);
 	    }
 
 }
