@@ -2,22 +2,26 @@ package StringPrograms;
 
 public class ReverseString {
 
-	public static void main(String[] args) {
-		String s="Hemanth";
-		char[] a=s.toCharArray();
-		int size=a.length;
-		char a1[] = new char[size];
+	 public static String reverse(String input) 
+	 {
+	        char[] characters = input.toCharArray();
+	        int n = characters.length-1;
 
-		int i=0;
-		while(i!=size)
-		{
-			a1[size-1-i]=a[i];
-			++i;
-		}
-		System.out.println(a);
-		System.out.println(a1);
+	        for (int i = 0; i < n / 2; i++) 
+	        {
+	            char c = characters[i];
+	            characters[i] = characters[n - i];
+	            characters[n - i ] = c;
+	        }
 
+	        return new String(characters);
+	    }
 
-	}
+	    public static void main(String[] args)
+	    {
+	        String text = "educative";
+	        System.out.println("Original string - " + text);
+	        System.out.println("Reversed string - " + reverse(text));
+	    }
 
 }
